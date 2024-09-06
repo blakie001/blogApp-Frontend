@@ -1,0 +1,56 @@
+.posts{
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* chat  */
+
+.posts {
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px; /* Adds spacing between posts */
+  }
+  
+  /* Responsive styles for tablets and smaller devices */
+  @media (max-width: 1024px) {
+    .posts {
+      margin: 10px;
+      gap: 15px; /* Adjusted spacing for smaller screens */
+    }
+  
+    .posts > * {
+      flex: 1 1 calc(50% - 15px); /* Two columns */
+      max-width: calc(50% - 15px); /* Two columns with spacing */
+    }
+  }
+  
+  /* Responsive styles for mobile devices */
+  @media (max-width: 768px) {
+    .posts {
+      margin: 5px;
+      gap: 10px; /* Reduced spacing for smaller screens */
+    }
+  
+    .posts > * {
+      flex: 1 1 calc(100% - 10px); /* Single column */
+      max-width: calc(100% - 10px); /* Single column with spacing */
+    }
+  }
+  
+  /* Responsive styles for very small screens */
+  @media (max-width: 480px) {
+    .posts {
+      margin: 0;
+      gap: 5px; /* Minimal spacing */
+    }
+  
+    .posts > * {
+      flex: 1 1 100%; /* Full width for each post */
+      max-width: 100%; /* Full width with minimal spacing */
+    }
+  }
+  

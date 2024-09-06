@@ -1,0 +1,77 @@
+.home {
+  display: flex;
+}
+
+
+/* chatgpt :  */
+
+/* .home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.posts {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.header {
+  background-color: #f4f4f4;
+  padding: 10px;
+} */
+
+/* Responsive styles for smaller screens */
+
+
+@media (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .posts {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .sidebar {
+    flex: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 5px;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+
+  .posts {
+    margin-bottom: 15px;
+  }
+
+  .sidebar {
+    flex: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 2px;
+    font-size: 14px;
+  }
+
+  .home {
+    padding: 10px;
+  }
+
+  .posts {
+    margin-bottom: 10px;
+  }
+}
